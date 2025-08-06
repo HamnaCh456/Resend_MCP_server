@@ -7,6 +7,11 @@ Plug it into Claude Desktop, Cursor, or any other MCP client and start sending m
 ## Demo
 [Watch the Demo](https://youtu.be/t3ALuFP2JaY)
 
+---
+## Deployed MCP Server Link
+[link](https://smithery.ai/server/@HamnaCh456/resend_mcp_server345)
+
+---
 ## Quick start
 
 1. **Grab the code**
