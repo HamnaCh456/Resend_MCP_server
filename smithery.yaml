@@ -1,0 +1,19 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({command: 'python', args: ['server.py'], env: {RESEND_API: config.resendApi}})
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - resendApi
+    properties:
+      resendApi:
+        type: string
+        description: Resend API key for authentication
+  exampleConfig:
+    resendApi: REPLACE_WITH_RESEND_API_KEY
